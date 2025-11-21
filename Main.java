@@ -1,9 +1,16 @@
 public class Main{
-    	int x = 5;
-        public static void main(String[] args){
-            Main myObj = new Main();
-            myObj.x = 30;
-            System.out.println(myObj.x);
-
+      public void fullThrottle(){
+        System.out.println("Woah thats fast!");
         }
+      public void speed(int maxSpeed) {
+        System.out.println("You're going "+ maxSpeed);
+      }    
+
+
+    public static void main(String[] args){
+        Main myCar = new Main();
+        myCar.fullThrottle();
+        myCar.speed(200);
+    }
 }
+
