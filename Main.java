@@ -1,6 +1,6 @@
 public class Main{
-    int x = 5;
     public static void main(String[] args) {
+	int x = 5;
         Main MyObj = new Main();
         System.out.println(MyObj.x);
 
