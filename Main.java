@@ -1,16 +1,14 @@
 public class Main{
-      public void fullThrottle(){
-        System.out.println("Woah thats fast!");
-        }
-      public void speed(int maxSpeed) {
-        System.out.println("You're going "+ maxSpeed);
-      }    
+    int modelYear;
+    String modelName;
 
-
+    public Main(int year, String name){
+        modelYear = year;
+        modelName = name;
+    }
     public static void main(String[] args){
-        Main myCar = new Main();
-        myCar.fullThrottle();
-        myCar.speed(200);
+        Main myCar = new Main(1982,"toyota corolla");
+        System.out.println(myCar.modelYear + " " + myCar.modelName);
     }
 }
 
