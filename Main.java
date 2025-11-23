@@ -1,12 +1,7 @@
 public class Main{
     public static void main(String[] args){
-        Person p = new Person();
-        System.out.println(p.name);
-        System.out.println(p.age);
+        Person myObj = new Person();
+        myObj.setName("John");
+        System.out.println(myObj.getName());
     }
-}
-
-class Person {
-    String name = "John Doe";
-    private int age = 32;
 }
