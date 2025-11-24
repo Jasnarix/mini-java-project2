@@ -1,16 +1,32 @@
-class vehicle{
-    protected String brand = "ford";
-    public void honk(){
-        System.out.println("Honk!!!");
-    }    
+class Animal{
+    public void animalSound(){
+        System.out.println("This animal makes a sound");
+    }
 }
 
+class Pig extends Animal{
+    public void animalSound(){
+        System.out.println("Pig goes oink....");
+    }
+}
+
+
+class Dog extends Animal{
+    public void animalSound(){
+        System.out.println("Dog goes bark...");
+    }
+}
+
+
 class Main extends vehicle{
-    private String modelName = "Mustang";
     public static void main(String[] args){
-        Main myCar = new Main();
-        myCar.honk();
-        System.out.println(myCar.brand + " " + myCar.modelName);
+    Animal AnimalObj = new Animal();
+    Animal dogObj = new Dog();
+    Animal pigObj = new Pig();
+    AnimalObj.animalSound();
+    dogObj.animalSound();
+    pigObj.animalSound();
+
 
         
     }
