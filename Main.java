@@ -13,6 +13,7 @@ class Pig extends Animal{
 
 class Dog extends Animal{
     public void animalSound(){
+        super.animalSound();
         System.out.println("Dog goes bark...");
     }
 }
